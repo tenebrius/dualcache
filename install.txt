@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=com.vb.openlibraries.android.dualcache -DartifactId=lib -Dversion=1.0 -Dpackaging=aar -Dfile=C:\Users\Administrator\dualcache\dualcache.aar -DlocalRepositoryPath=C:\Users\Administrator\dualcache
