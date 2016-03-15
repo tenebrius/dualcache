@@ -1,6 +1,5 @@
 package com.vincentbrison.openlibraries.android.dualcache.lib;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.google.gson.reflect.TypeToken;
 
 /**
