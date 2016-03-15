@@ -1,6 +1,7 @@
 package com.vincentbrison.openlibraries.android.dualcache.lib;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.google.gson.reflect.TypeToken;
 
 /**
  * Class used to build a cache.
@@ -16,8 +17,8 @@ public class DualCacheBuilder<T> {
      * @param appVersion is the app version of the app. If data are already stored in disk cache with previous app version, it will be invalidate.
      * @param clazz is the class of object to store in cache.
      */
-    public DualCacheBuilder(String id, int appVersion, TypeReference<T> tTypeReference) {
-        mDualCache = new DualCache<T>(id, appVersion, tTypeReference);
+    public DualCacheBuilder(String id, int appVersion, TypeToken<T> typeToken) {
+        mDualCache = new DualCache<T>(id, appVersion, typeToken);
     }
 
     /**
